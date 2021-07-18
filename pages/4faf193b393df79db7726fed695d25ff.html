@@ -1,0 +1,3 @@
+modify opcode (change conditional of jump. nop, etc)<br><br><!DOCTYPE html>
+<html>
+| wao [op]  performs a modification on current opcode<br>| wao nop   nop current opcode<br>| wao jinf  assemble an infinite loop<br>| wao jz    make current opcode conditional (zero)<br>| wao jnz   make current opcode conditional (not zero)<br>| wao ret1  make the current opcode return 1<br>| wao ret0  make the current opcode return 0<br>| wao retn  make the current opcode return -1<br>| wao nocj  remove conditional operation from branch (make it unconditional)<br>| wao trap  make the current opcode a trap<br>| wao recj  reverse (swap) conditional branch instruction<br>| WIP:      not all archs are supported and not all commands work on all archs<br></html>

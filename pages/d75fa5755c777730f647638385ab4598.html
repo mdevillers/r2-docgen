@@ -1,0 +1,3 @@
+write cache undo/commit/reset/list (io.cache)<br><br><!DOCTYPE html>
+<html>
+Usage: wc[jir+-*?]    # NOTE: Uses io.cache=true<br>| wc               list all write changes<br>| wcj              list all write changes in JSON<br>| wc- [from] [to]  remove write op at curseek or given addr<br>| wc+ [from] [to]  commit change from cache to io<br>| wc*              "" in radare commands<br>| wcr              reset all write changes in cache<br>| wci              commit write cache<br>| wcp [fd]         list all cached write-operations on p-layer for specified fd or current fd<br>| wcp* [fd]        list all cached write-operations on p-layer in radare commands<br>| wcpi [fd]        commit and invalidate pcache for specified fd or current fd<br></html>

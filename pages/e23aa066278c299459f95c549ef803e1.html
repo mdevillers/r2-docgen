@@ -1,0 +1,3 @@
+Inject and run code on target process (See gs)<br><br><!DOCTYPE html>
+<html>
+Usage: dx    # Code injection commands<br>| dx <opcode>...                      Inject opcodes<br>| dxa nop                             Assemble code and inject<br>| dxe egg-expr                        Compile egg expression and inject it<br>| dxr <opcode>...                     Inject opcodes and restore state<br>| dxs write 1, 0x8048, 12             Syscall injection (see gs)<br><br>Examples:<br>| dx 9090                             Inject two x86 nop<br>| "dxa mov eax,6;mov ebx,0;int 0x80"  Inject and restore state<br></html>

@@ -1,0 +1,3 @@
+Compare memory hexdumps of $$ and dst in unified diff<br><br><!DOCTYPE html>
+<html>
+Usage: cu  [offset]  # Prints unified comparison to make hexpatches<br>| cu $$+1 > p   Compare hexpairs from  current seek and +1<br>| cu1 $$+1 > p  Compare bytes from current seek and +1<br>| cu2 $$+1 > p  Compare words (half, 16bit) from current seek and +1<br>| cu4 $$+1 > p  Compare dwords from current seek and +1<br>| cu8 $$+1 > p  Compare qwords from current seek and +1<br>| cud $$+1 > p  Compare disasm current seek and +1<br>| wu p          Apply unified hex patch (see output of cu)<br></html>
